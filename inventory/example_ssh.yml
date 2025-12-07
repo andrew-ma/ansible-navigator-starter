@@ -12,8 +12,9 @@ ssh_group:
       hosts:
         hostname01:
           ansible_host: '192.168.1.10'
-          ansible_user: 'admin'
-          # ansible_password: ''
-          # ansible_become_password: ''
-          # ansible_ssh_private_key_file: ''
+          # NOTE: define these variables in the vault file
+          # ansible_user: '{{ ANSIBLE_USER }}'
+          # ansible_password: '{{ ANSIBLE_PASSWORD }}'
+          # ansible_become_password: '{{ ANSIBLE_BECOME_PASSWORD }}'
+          # ansible_ssh_private_key_file: '{{ ANSIBLE_SSH_PRIVATE_KEY_FILE }}'
 
